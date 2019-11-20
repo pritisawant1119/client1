@@ -11,4 +11,4 @@ if [ $(docker container ls -q --filter name="client_container") != '' ];then
 docker image build -t client .
 
 
-docker container run -itd -p8000:80 --name client_container client
+docker container run -itd -p8001:80 --name client_container client

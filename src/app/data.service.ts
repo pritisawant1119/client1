@@ -12,24 +12,24 @@ export class DataService {
   }
   GetData()
   {
-    return this.http.get("http://200.0.1.230:4001/employees");
+    return this.http.get("http://192.168.43.29:4001/employees");
   }
   AddData(emp)
   {
-   return this.http.post("http://200.0.1.230:4001/employees",emp);
+   return this.http.post("http://192.168.43.29:4001/employees",emp);
   }
   delete(no)
   {
-    return this.http.delete("http://localhost:4000/employees/"+no);
+    return this.http.delete("http://192.168.43.29:4001/employees/"+no);
   }
   getdatabyid(no)
   {
-    return this.http.get("http://localhost:4000/employees/"+no);
+    return this.http.get("http://192.168.43.29:4001/employees/"+no);
   }
   
   update(emp)
   {
-    return this.http.put("http://localhost:4000/employees/"+emp.no,emp);
+    return this.http.put("http://192.168.43.29:4001/employees/"+emp.no,emp);
   }
 
   }
